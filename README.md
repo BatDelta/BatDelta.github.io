@@ -1,8 +1,6 @@
-# BatDelta.github.io
-Personal website
+# DOC314 - Group 9 website
+## Theme daycare centre
 
 Things to do:
-> Set Bourbon Neat grid layout.
-> 
-> Create body block.
+> Initial layout 
 > 
