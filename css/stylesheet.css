@@ -2,21 +2,28 @@
   padding: 0;
   margin: 0; }
 
+body {
+  font-family: 'Poppins', sans-serif; }
+
 #navigation {
   width: 100%;
   height: 100px;
-  background-color: gray; }
+  background-color: #FEDCD2;
+  text-align: center; }
   #navigation img {
-    height: 100%;
-    width: auto;
-    padding-left: 20px; }
+    float: left;
+    height: 100%; }
   #navigation ul {
-    float: right; }
+    text-align: center;
+    display: inline-block;
+    vertical-align: top; }
     #navigation ul li {
-      display: inline-block; }
-
-#big-block img {
-  width: 100%;
-  height: auto; }
+      list-style-type: none;
+      display: inline; }
+      #navigation ul li a {
+        text-decoration: none;
+        line-height: 100px;
+        font-size: 28px;
+        padding: 5px 20px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
