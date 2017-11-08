@@ -3,23 +3,28 @@
   margin: 0; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  background-color: #6ec4db; }
 
 #navigation {
   width: 100%;
   height: 100px;
-  background-color: #FEDCD2;
+  background-color: white;
   text-align: center; }
   #navigation img {
-    float: left;
-    height: 100%; }
+    vertical-align: middle;
+    height: 90%;
+    padding: 5px; }
   #navigation ul {
     text-align: center;
     display: inline-block;
     vertical-align: top; }
     #navigation ul li {
       list-style-type: none;
-      display: inline; }
+      display: inline;
+      height: 100%; }
+      #navigation ul li:hover {
+        background-color: #FEDCD2; }
       #navigation ul li a {
         color: black;
         opacity: 0.9;
