@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#navigation {
+  width: 100%;
+  height: 100px;
+  background-color: gray; }
+  #navigation img {
+    height: 100%;
+    width: auto;
+    padding-left: 20px; }
+  #navigation ul {
+    float: right; }
+    #navigation ul li {
+      display: inline-block; }
+
+#big-block img {
+  width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=stylesheet.css.map */
