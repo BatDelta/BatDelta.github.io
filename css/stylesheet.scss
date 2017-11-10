@@ -3,9 +3,14 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins/Poppins-regular.ttf")
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #6ec4db;
+  background-color: #3BE2F1;
 }
 
 #navigation {
@@ -20,6 +25,10 @@ body {
     vertical-align: middle;
     height: 90%;
     padding: 5px;
+  }
+  h1 {
+    vertical-align: middle;
+    display: inline-block;
   }
   ul {
     text-align: center;
