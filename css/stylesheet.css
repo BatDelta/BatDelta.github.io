@@ -53,10 +53,22 @@ header {
 
 .main-body {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 10px repeat(5, 1fr) 10px;
   grid-column-gap: 10px;
-  grid-template-rows: none;
+  grid-template-rows: 20px auto;
   grid-auto-rows: max-content;
-  grid-template-areas: "robotron robotron robotron robotron robotron"; }
+  grid-template-areas: ". . . . . . ." ". robotron-main robotron-main robotron-main robotron-side robotron-side ."; }
+
+#robotron-main {
+  grid-area: robotron-main; }
+  #robotron-main img {
+    width: 100%;
+    height: auto; }
+
+#robotron-side {
+  grid-area: robotron-side;
+  padding: 30px;
+  background-color: white;
+  text-align: justify; }
 
 /*# sourceMappingURL=stylesheet.css.map */
