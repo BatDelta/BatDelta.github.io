@@ -11,33 +11,45 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: "title navigation";
-  grid-template-rows: 80px;
+  grid-template-columns: 2fr 100px 3fr;
+  grid-template-areas: "title logo navigation";
+  grid-template-rows: 100px;
   background-color: white;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); }
   header #title {
-    grid-area: title;
-    align-items: center; }
+    grid-column: title / logo;
+    align-items: center;
+    justify-self: end; }
     header #title h1 {
+      grid-area: title;
       display: inline-block;
       vertical-align: middle;
       padding: 0 5px; }
     header #title img {
+      grid-area: logo;
       height: 90%;
       padding: 5px;
       vertical-align: middle; }
   header ul {
-    grid-area: navigation; }
+    grid-area: navigation;
+    justify-self: center;
+    display: table;
+    width: 85%;
+    margin: auto;
+    text-align: center; }
     header ul li {
       list-style-type: none;
-      display: inline; }
+      display: table-cell; }
+      header ul li:hover {
+        background-color: #FEDCD2; }
       header ul li a {
         color: black;
         opacity: 0.9;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 28px;
+        margin: 0 5px; }
 
 /*
 header {
