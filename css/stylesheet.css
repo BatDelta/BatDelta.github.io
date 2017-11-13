@@ -55,9 +55,9 @@ header {
   display: grid;
   grid-template-columns: 10px repeat(5, 1fr) 10px;
   grid-column-gap: 10px;
-  grid-template-rows: 20px auto;
+  grid-template-rows: 20px auto 20px;
   grid-auto-rows: max-content;
-  grid-template-areas: ". . . . . . ." ". robotron-main robotron-main robotron-main robotron-side robotron-side ."; }
+  grid-template-areas: ". . . . . . ." ". robotron-main robotron-main robotron-main robotron-side robotron-side ." ". . . . . . ."; }
 
 #robotron-main {
   grid-area: robotron-main; }
@@ -70,5 +70,15 @@ header {
   padding: 30px;
   background-color: white;
   text-align: justify; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px;
+  grid-template-areas: "footer-left footer-left footer-right footer-right footer-right";
+  background-color: white;
+  -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25); }
 
 /*# sourceMappingURL=stylesheet.css.map */
