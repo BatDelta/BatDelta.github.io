@@ -2,9 +2,9 @@
 ## Theme daycare centre
 
 Things to do:
-> Base content for non-home pages 
-> Format and fill robotron content
-> Sub content for home page
-> Find pictures. Lots of them.
-> Think of more points.
->
+- [x] Base formatting
+- [ ] Base content for non-home pages 
+- [ ] Format and fill robotron content
+- [ ] Sub content for home page
+- [ ] Find pictures. Lots of them.
+- [ ] Think of more points.
