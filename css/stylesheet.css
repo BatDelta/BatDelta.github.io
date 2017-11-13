@@ -111,7 +111,8 @@ footer {
       width: 50%;
       margin: auto; }
       footer #footer-left #footer-contact p {
-        display: inline-block; }
+        display: inline-block;
+        padding-right: 10px; }
         footer #footer-left #footer-contact p a {
           text-decoration: none; }
       footer #footer-left #footer-contact img {
