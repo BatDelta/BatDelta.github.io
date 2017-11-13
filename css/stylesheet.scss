@@ -94,12 +94,33 @@ header {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 150px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 150px 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   grid-template-areas:
-    "footer-left footer-left footer-right footer-right footer-right";
+    "footer-left footer-left footer-middle footer-middle footer-right footer-right"
+    "footer-bottom footer-bottom footer-bottom footer-bottom footer-bottom footer-bottom";
   background-color: white;
   -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
   box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+  #footer-left {
+    grid-area: footer-left;
+    background-color: rgba(50,0,0,0.25);
+  }
+  #footer-middle {
+    grid-area: footer-middle;
+    background-color: rgba(0,50,0,0.25);
+  }
+  #footer-right {
+    grid-area: footer-right;
+    background-color: rgba(0,0,50,0.25);
+  }
+  #footer-bottom {
+    grid-area: footer-bottom;
+    -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+  }
 }
