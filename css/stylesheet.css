@@ -51,6 +51,17 @@ header {
         font-size: 28px;
         margin: 0 5px; }
 
+.btn {
+  color: #000000;
+  font-size: 26px;
+  background: #FEDCD2;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 0 solid #FFF; }
+  .btn:hover {
+    background: #58D4FC;
+    text-decoration: none; }
+
 .main-body {
   display: grid;
   grid-template-columns: 10px repeat(5, 1fr) 10px;
@@ -67,6 +78,7 @@ header {
 
 #robotron-side {
   grid-area: robotron-side;
+  height: auto;
   padding: 30px;
   background-color: white;
   text-align: justify; }
@@ -74,7 +86,7 @@ header {
 footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto 50px;
+  grid-template-rows: auto 60px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas: "footer-left footer-left footer-middle footer-middle footer-right" "footer-bottom footer-bottom footer-bottom footer-bottom footer-bottom";
@@ -82,25 +94,42 @@ footer {
   -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25); }
-  footer #footer-left {
-    grid-area: footer-left;
-    padding: 10px;
-    background-color: rgba(50, 0, 0, 0.25); }
   footer #footer-middle {
     grid-area: footer-middle;
-    background-color: rgba(0, 50, 0, 0.25); }
+    padding: 20px; }
+    footer #footer-middle form {
+      margin: 10px 0; }
+    footer #footer-middle .btn {
+      font-size: 22px; }
+    footer #footer-middle input[type=text] {
+      font-size: 22px;
+      padding: 8px 20px; }
+  footer #footer-left {
+    grid-area: footer-left;
+    padding: 20px; }
+    footer #footer-left #footer-contact {
+      width: 50%;
+      margin: auto; }
+      footer #footer-left #footer-contact p {
+        display: inline-block; }
+        footer #footer-left #footer-contact p a {
+          text-decoration: none; }
+      footer #footer-left #footer-contact img {
+        height: 50px;
+        vertical-align: middle; }
   footer #footer-right {
     grid-area: footer-right;
-    background-color: rgba(0, 0, 50, 0.25);
-    padding: 10px; }
+    padding: 20px; }
     footer #footer-right ul {
-      list-style-type: none; }
+      list-style-type: none;
+      column-count: 2; }
       footer #footer-right ul a {
         text-decoration: none; }
+        footer #footer-right ul a:hover {
+          text-decoration: underline; }
   footer #footer-bottom {
     grid-area: footer-bottom;
-    -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25); }
+    text-align: center;
+    border-top: 3px solid rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=stylesheet.css.map */

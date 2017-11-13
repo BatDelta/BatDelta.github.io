@@ -65,6 +65,19 @@ header {
   }
 }
 
+.btn {
+  color: #000000;
+  font-size: 26px;
+  background: #FEDCD2;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 0 solid #FFF;
+  &:hover {
+    background: #58D4FC;
+    text-decoration: none;
+  }
+}
+
 .main-body {
   display: grid;
   grid-template-columns: 10px repeat(5, 1fr) 10px;
@@ -87,6 +100,7 @@ header {
 
 #robotron-side {
   grid-area: robotron-side;
+  height: auto;
   padding: 30px;
   background-color: white;
   text-align: justify;
@@ -95,7 +109,7 @@ header {
 footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto 50px;
+  grid-template-rows: auto 60px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas:
@@ -105,30 +119,55 @@ footer {
   -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
   box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
-  #footer-left {
-    grid-area: footer-left;
-    padding: 10px;
-    background-color: rgba(50,0,0,0.25);
-  }
   #footer-middle {
     grid-area: footer-middle;
-    background-color: rgba(0,50,0,0.25);
+    padding: 20px;
+    form {
+      margin: 10px 0;
+    }
+    .btn {
+      font-size: 22px;
+    }
+    input[type=text] {
+      font-size: 22px;
+      padding: 8px 20px;
+    }
+  }
+  #footer-left {
+    grid-area: footer-left;
+    padding: 20px;
+    #footer-contact {
+      width: 50%;
+      margin: auto;
+      p {
+        display: inline-block;
+        a {
+          text-decoration: none;
+        }
+      }
+      img {
+        height: 50px;
+        vertical-align: middle;
+      }
+    }
   }
   #footer-right {
     grid-area: footer-right;
-    background-color: rgba(0,0,50,0.25);
-    padding: 10px;
+    padding: 20px;
     ul {
       list-style-type: none;
+      column-count: 2;
       a {
         text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
   #footer-bottom {
     grid-area: footer-bottom;
-    -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
-    box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+    text-align: center;
+    border-top: 3px solid rgba(0,0,0,0.1);
   }
 }
