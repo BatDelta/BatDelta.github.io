@@ -2,5 +2,9 @@
 ## Theme daycare centre
 
 Things to do:
-> Initial layout 
-> 
+> Base content for non-home pages 
+> Format and fill robotron content
+> Sub content for home page
+> Find pictures. Lots of them.
+> Think of more points.
+>
