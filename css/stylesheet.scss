@@ -73,6 +73,7 @@ header {
   text-decoration: none;
   border: 0 solid #FFF;
   &:hover {
+    cursor: pointer;
     background: #58D4FC;
     text-decoration: none;
   }
@@ -109,7 +110,7 @@ header {
 footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto 60px;
+  grid-template-rows: auto auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas:
@@ -137,8 +138,8 @@ footer {
     grid-area: footer-left;
     padding: 20px;
     #footer-contact {
-      width: 50%;
-      margin: auto;
+      width: 100%;
+      padding: auto;
       p {
         display: inline-block;
         padding-right: 10px;
@@ -147,6 +148,7 @@ footer {
         }
       }
       img {
+        cursor: pointer;
         height: 50px;
         vertical-align: middle;
       }
