@@ -158,6 +158,46 @@ header {
     margin: 5px;
     border: 10px solid #FEDCD2; }
 
+#about-us-content #about-us-logo {
+  width: calc(10% - 20px);
+  margin: 0 20px 20px;
+  float: left; }
+#about-us-content p {
+  padding: 0 10px;
+  text-align: justify; }
+#about-us-content #open-hours {
+  clear: both;
+  border-top: 3px dashed rgba(128, 128, 128, 0.25);
+  border-bottom: 3px dashed rgba(128, 128, 128, 0.25);
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-align: center; }
+  #about-us-content #open-hours p {
+    padding-top: 10px;
+    text-align: center; }
+#about-us-content #staff {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px 20px;
+  grid-template-areas: "staff-h staff-h staff-h staff-h staff-h" "staff1 staff2 staff3 staff4 staff5" "staff-blurb staff-blurb staff-blurb staff-blurb staff-blurb"; }
+  #about-us-content #staff p {
+    text-align: center; }
+  #about-us-content #staff h2 {
+    grid-area: staff-h;
+    text-align: center; }
+  #about-us-content #staff img {
+    width: calc(100% - 5px);
+    height: auto;
+    border: 5px solid #FEDCD2;
+    border-radius: 5%; }
+  #about-us-content #staff #staff-blurb {
+    grid-area: staff-blurb;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px; }
+
 #contact-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
