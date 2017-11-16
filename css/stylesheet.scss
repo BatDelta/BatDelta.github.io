@@ -200,16 +200,15 @@ header {
   }
 
   #gallery-preview {
-    margin-top: 3px dashed rgba(128,128,128,0.25);
-    margin-bottom: 3px dashed rgba(128,128,128,0.25);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     grid-column-gap: 20px;
     align-items: center;
     grid-template-areas:
       "galleryp-h galleryp-h galleryp-h galleryp-h"
-      ". . . .";
+      ". . . ."
+      "galleryp-b galleryp-b galleryp-b galleryp-b";
     h2 {
       grid-area: galleryp-h;
     }
@@ -219,6 +218,24 @@ header {
       margin: 5px;
       border: 10px solid #FEDCD2;
     }
+    .btn {
+      grid-area: galleryp-b;
+    }
+  }
+  #testimonies {
+    text-align: center;
+    .testimo {
+      width: calc(100% - 30px);
+      margin: 10px 30px 30px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  #home-content-bottom {
+    width: 60%;
+    align-self: center;
+    display: block;
+    margin: auto;
   }
 }
 
