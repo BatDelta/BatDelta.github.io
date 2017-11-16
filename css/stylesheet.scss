@@ -82,14 +82,13 @@ header {
 
 .main-body-home {
   display: grid;
+  margin: 20px 0;
   grid-template-columns: 10px repeat(5, 1fr) 10px;
   grid-column-gap: 10px;
-  grid-template-rows: 20px auto 20px;
+  grid-template-rows: auto;
   grid-auto-rows: max-content;
   grid-template-areas:
-    ". . . . . . ."
-    ". robotron-main robotron-main robotron-main robotron-side robotron-side ."
-    ". . . . . . .";
+    ". robotron-main robotron-main robotron-main robotron-side robotron-side .";
 }
 
 #robotron-main {
@@ -162,16 +161,63 @@ header {
 #home-content {
   background-color: white;
   padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 500px 300px;
-  grid-template-areas:
-    "why-us why-us why-us why-us";
-    #why-us {
-    grid-area: why-us;
+  h2 {
+    text-align: center;
+    margin: 20px;
+  }
+  #why-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto 400px;
+    grid-column-gap: 50px;
+    grid-template-areas:
+      "whyus-title whyus-title whyus-title"
+      "whyus-1 whyus-2 whyus-3";
     h2 {
-      text-align: center;
-      margin: 20px;
+      grid-area: whyus-title;
+    }
+    #whyus-1 {
+      grid-area: whyus-1;
+      background-color: red;
+      height: 100%;
+      width: 100%;
+      border: 3px dashed rgba(128,128,128,0.25);
+    }
+    #whyus-2 {
+      grid-area: whyus-2;
+      background-color: red;
+      height: 100%;
+      width: 100%;
+      border: 3px dashed rgba(128,128,128,0.25);
+    }
+    #whyus-3 {
+      grid-area: whyus-3;
+      background-color: red;
+      height: 100%;
+      width: 100%;
+      border: 3px dashed rgba(128,128,128,0.25);
+    }
+  }
+
+  #gallery-preview {
+    margin-top: 3px dashed rgba(128,128,128,0.25);
+    margin-bottom: 3px dashed rgba(128,128,128,0.25);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    grid-template-areas:
+      "galleryp-h galleryp-h galleryp-h galleryp-h"
+      ". . . .";
+    h2 {
+      grid-area: galleryp-h;
+    }
+    img {
+      width: calc(100% - 30px);
+      display: inline-block;
+      margin: 5px;
+      border: 10px solid #FEDCD2;
     }
   }
 }
