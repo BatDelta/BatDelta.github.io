@@ -81,9 +81,15 @@ header {
 #robotron-side {
   grid-area: robotron-side;
   height: auto;
+  font-size: 24px;
   padding: 30px;
   background-color: white;
-  text-align: justify; }
+  text-align: center; }
+  #robotron-side p {
+    padding-bottom: 20px; }
+  #robotron-side .btn {
+    margin: 20px 0;
+    padding: 20px 40px 20px 40px; }
 
 .main-body {
   display: grid;
@@ -123,6 +129,22 @@ header {
     text-align: center;
     margin: 20px; }
 
+#home-content {
+  background-color: white;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 500px 300px;
+  grid-template-areas: "why-us why-us why-us why-us"; }
+  #home-content #why-us {
+    grid-area: why-us; }
+    #home-content #why-us h2 {
+      text-align: center;
+      margin: 20px; }
+
+#enroll-content p {
+  margin-bottom: 30px; }
+
 #gallery-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,7 +165,8 @@ header {
   grid-gap: 10px 0; }
   #contact-content #contact-info {
     grid-column: 1 / 2;
-    border-right: 3px dashed rgba(128, 128, 128, 0.25); }
+    border-right: 3px dashed rgba(128, 128, 128, 0.25);
+    text-align: center; }
   #contact-content #inquiry {
     grid-column: 2 / 5;
     margin: 10px 10px 10px 20px; }
