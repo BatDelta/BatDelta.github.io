@@ -84,8 +84,8 @@ header {
 
 #robotron-side {
   grid-area: robotron-side;
-  height: 60%;
-  font-size: 24px;
+  height: 80%;
+  font-size: 1.2em;
   padding: 30px;
   background-color: white;
   text-align: center;
