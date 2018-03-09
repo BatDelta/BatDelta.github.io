@@ -46,11 +46,13 @@ header {
     justify-self: center;
     display: table;
     width: 85%;
+    height: 100%;
     margin: auto;
     text-align: center;
     li {
       list-style-type: none;
       display: table-cell;
+      vertical-align: middle;
       &:hover {
         background-color: #FEDCD2;
       }
@@ -60,7 +62,6 @@ header {
         text-decoration: none;
         font-size: 28px;
         margin: 0 5px;
-
       }
     }
   }

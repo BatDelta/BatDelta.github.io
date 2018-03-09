@@ -38,11 +38,13 @@ header {
     justify-self: center;
     display: table;
     width: 85%;
+    height: 100%;
     margin: auto;
     text-align: center; }
     header ul li {
       list-style-type: none;
-      display: table-cell; }
+      display: table-cell;
+      vertical-align: middle; }
       header ul li:hover {
         background-color: #FEDCD2; }
       header ul li a {
@@ -84,8 +86,8 @@ header {
 
 #robotron-side {
   grid-area: robotron-side;
-  height: 80%;
-  font-size: 1.2em;
+  height: 60%;
+  font-size: 24px;
   padding: 30px;
   background-color: white;
   text-align: center;
