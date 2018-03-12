@@ -54,6 +54,19 @@ header {
         font-size: 28px;
         margin: 0 5px; }
 
+/* Media queries for smaller screens - Header */
+@media only screen and (max-width: 900px) {
+  header {
+    display: block; }
+    header #title {
+      width: 100%;
+      justify-self: center;
+      margin: auto; }
+      header #title img {
+        height: 80px;
+        margin: auto; }
+    header ul {
+      width: 100%; } }
 .btn {
   color: #000000;
   font-size: 26px;
