@@ -199,9 +199,16 @@ header {
     display: block;
     margin: auto; }
 
+/* Media queries for smaller screens - Home page */
+@media only screen and (max-width: 900px) {
+  .main-body-home {
+    display: block;
+    width: 100%; } }
+/* Enrollment page styling*/
 #enroll-content p {
   margin-bottom: 30px; }
 
+/* Gallery page styling*/
 #gallery-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

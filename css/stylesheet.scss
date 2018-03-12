@@ -1,3 +1,12 @@
+$primary-color: #FEDCD2;
+$secondary-color: #3BE2F1;
+
+@mixin standard-shadow {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +19,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #3BE2F1;
+  background-color: $secondary-color;
   background-image: url("../images/checkered-light-emboss.png");
 }
 
@@ -21,9 +30,7 @@ header {
     "title logo navigation";
   grid-template-rows: 100px;
   background-color: white;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  @include standard-shadow;
   #title {
     grid-column: title / logo;
     align-items: center;
@@ -54,7 +61,7 @@ header {
       display: table-cell;
       vertical-align: middle;
       &:hover {
-        background-color: #FEDCD2;
+        background-color: $primary-color;
       }
       a {
         color: black;
@@ -70,7 +77,7 @@ header {
 .btn {
   color: #000000;
   font-size: 26px;
-  background: #FEDCD2;
+  background: $primary-color;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: 0 solid #FFF;
@@ -97,9 +104,7 @@ header {
   img {
     width: 100%;
     height: auto;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+    @include standard-shadow;
   }
 }
 
@@ -110,9 +115,7 @@ header {
   padding: 30px;
   background-color: white;
   text-align: center;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  @include standard-shadow;
   p {
     padding-bottom: 20px;
   }
@@ -140,11 +143,9 @@ header {
   width: 100%;
   overflow: hidden;
   height: auto;
-  border-top: 10px solid #FEDCD2;
-  border-bottom: 10px solid #FEDCD2;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  border-top: 10px solid $primary-color;
+  border-bottom: 10px solid $primary-color;
+  @include standard-shadow;
   img {
     width: 100%;
     height: auto;
@@ -225,7 +226,7 @@ header {
       width: calc(100% - 30px);
       display: inline-block;
       margin: 5px;
-      border: 10px solid #FEDCD2;
+      border: 10px solid $primary-color;
     }
     .btn {
       grid-area: galleryp-b;
@@ -248,11 +249,25 @@ header {
   }
 }
 
+/* Media queries for smaller screens - Home page */
+@media only screen and (max-width: 900px) {
+  .main-body-home {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* Enrollment page styling*/
+
 #enroll-content {
   p {
     margin-bottom: 30px;
   }
 }
+
+
+/* Gallery page styling*/
 
 #gallery-content {
   display: grid;
@@ -265,7 +280,7 @@ header {
     width: calc(100% - 30px);
     display: inline-block;
     margin: 5px;
-    border: 10px solid #FEDCD2;
+    border: 10px solid $primary-color;
   }
 }
 
@@ -311,7 +326,7 @@ header {
     img {
       width: calc(100% - 5px);
       height: auto;
-      border: 5px solid #FEDCD2;
+      border: 5px solid $primary-color;
       border-radius: 5%;
     }
     #staff-blurb {
