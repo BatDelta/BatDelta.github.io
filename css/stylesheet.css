@@ -61,7 +61,8 @@ header {
     header #title {
       width: 100%;
       justify-self: center;
-      margin: auto; }
+      margin: auto;
+      text-align: center; }
       header #title img {
         height: 80px;
         margin: auto; }
@@ -112,14 +113,6 @@ header {
   #robotron-side .btn {
     margin: 20px 0;
     padding: 20px 40px 20px 40px; }
-
-.main-body {
-  display: grid;
-  grid-template-columns: 10px repeat(5, 1fr) 10px;
-  grid-column-gap: 10px;
-  grid-template-rows: 20px 500px auto 20px;
-  grid-auto-rows: max-content;
-  grid-template-areas: ". . . . . . ." "body-image body-image body-image body-image body-image body-image body-image" ". . . . . . ."; }
 
 .body-image {
   grid-area: body-image;
