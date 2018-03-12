@@ -132,19 +132,17 @@ header {
 #robotron-side {
   grid-area: robotron-side;
   height: 60%;
-  font-size: 1.3em;
-  padding: 7%;
+  font-size: 24px;
+  padding: 30px;
   background-color: white;
-  text-align: justify;
-  text-align-last: center;
-  -moz-text-align-last: center;
+  text-align: center;
   @include standard-shadow;
   p {
-    padding-bottom: 3%;
+    padding-bottom: 20px;
   }
   .btn {
     margin: 20px 0;
-    padding: 6% 12%;
+    padding: 20px 40px 20px 40px;
   }
 }
 
