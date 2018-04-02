@@ -229,15 +229,15 @@ header {
     #enroll-content #enrollform form p {
       padding-top: 2%;
       padding-left: 5%; }
-  #enroll-content #enrollform table {
-    width: 100%; }
-    #enroll-content #enrollform table tr td {
-      padding-left: 5%;
-      padding-right: 5%;
-      width: 50%; }
-    #enroll-content #enrollform table th {
-      padding-top: 2%;
-      padding-bottom: 2%; }
+    #enroll-content #enrollform form table {
+      width: 100%; }
+      #enroll-content #enrollform form table tr td {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 50%; }
+      #enroll-content #enrollform form table th {
+        padding-top: 2%;
+        padding-bottom: 2%; }
   #enroll-content #enrollform .tbox {
     position: relative;
     right: 0%;
