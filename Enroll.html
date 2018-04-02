@@ -32,13 +32,13 @@
       <div id="enroll-content">
         <h1>Enrollment Form</h1>
         <div id="enrollform">
-          <p>Submit the following information of both the child and the guardian.</p>
-          <form method="post" action="submit.php" name="enrollnow">
-            <table width="100%">
-              <th>Guardian Info</th>
+          <form method="post" action="submit.php">
+            <p>Submit the following information of both the child and the guardian.</p>
+            <table>
+              <th>Guardian's Information</th>
               <tr>
                 <td>Name of Guardian:</td>
-                <td><input type="text" class="tbox" name="gname"></td>
+                <td><input type="text" class="tbox" name="gname" placeholder="John Doe"></td>
               </tr>
               <tr>
                 <td>Telephone Number:</td>
@@ -46,18 +46,18 @@
               </tr>
               <tr>
                 <td>E-mail:</td>
-                <td><input type="text" class="tbox" name="email"></td>
+                <td><input type="text" class="tbox" name="email" placeholder="demo@demomail.com"></td>
               </tr>
             </table>
             <br />
-            <table width="100%">
-              <th> Child's Information</th>
+            <table>
+              <th>Child's Information</th>
               <tr>
                 <td>Name of Child:</td>
-                <td><input type="text" class="tbox" name="cname"></td>
+                <td><input type="text" class="tbox" name="cname" placeholder="Baby Jane Doe"></td>
               </tr>
               <tr>
-                <td>Date-of-Birth:</td>
+                <td>Date of Birth:</td>
                 <td><input type="date" class="tbox" name="cdob"></td>
               </tr>
               <tr>
@@ -65,7 +65,7 @@
                 <td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female </td>
               </tr>
               <tr>
-                <td><input type="submit"></td>
+                <td><button type="submit" class="btn">Submit</button></td>
               </tr>
             </table>
           </form>

@@ -148,13 +148,6 @@ header {
   .body-content h1 {
     text-align: center;
     margin: 20px; }
-  .body-content #enrollform {
-    position: relative;
-    left: 25%;
-    width: 75%; }
-    .body-content #enrollform .tbox {
-      width: 20%;
-      height: auto; }
 
 #home-content {
   background-color: white;
@@ -225,6 +218,37 @@ header {
 /* Enrollment page styling*/
 #enroll-content p {
   margin-bottom: 30px; }
+#enroll-content #enrollform {
+  position: relative;
+  left: 20%;
+  width: 80%;
+  font-size: 18px; }
+  #enroll-content #enrollform form {
+    background-color: #FEDCD2;
+    width: 80%; }
+    #enroll-content #enrollform form p {
+      padding-top: 2%;
+      padding-left: 5%; }
+  #enroll-content #enrollform table {
+    width: 100%; }
+    #enroll-content #enrollform table tr td {
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 50%; }
+    #enroll-content #enrollform table th {
+      padding-top: 2%;
+      padding-bottom: 2%; }
+  #enroll-content #enrollform .tbox {
+    position: relative;
+    right: 0%;
+    width: 80%;
+    height: auto;
+    padding: 10px 20px 10px 20px; }
+  #enroll-content #enrollform .btn {
+    margin: 20px 0;
+    background-color: #3BE2F1;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px; }
 
 /* Gallery page styling*/
 #gallery-content {
