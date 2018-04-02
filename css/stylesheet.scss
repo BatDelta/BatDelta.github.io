@@ -178,6 +178,15 @@ header {
     text-align: center;
     margin: 20px;
   }
+  #enrollform {
+    position: relative;
+    left: 25%;
+    width: 75%;
+    .tbox {
+      width: 20%;
+      height: auto;
+    }
+  }
 }
 
 #home-content {

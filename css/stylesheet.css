@@ -148,6 +148,13 @@ header {
   .body-content h1 {
     text-align: center;
     margin: 20px; }
+  .body-content #enrollform {
+    position: relative;
+    left: 25%;
+    width: 75%; }
+    .body-content #enrollform .tbox {
+      width: 20%;
+      height: auto; }
 
 #home-content {
   background-color: white;

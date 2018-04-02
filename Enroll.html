@@ -30,6 +30,47 @@
     </div>
     <div class="body-content">
       <div id="enroll-content">
+        <h1>Enrollment Form</h1>
+        <div id="enrollform">
+          <p>Submit the following information of both the child and the guardian.</p>
+          <form method="post" action="submit.php" name="enrollnow">
+            <table width="100%">
+              <th>Guardian Info</th>
+              <tr>
+                <td>Name of Guardian:</td>
+                <td><input type="text" class="tbox" name="gname"></td>
+              </tr>
+              <tr>
+                <td>Telephone Number:</td>
+                <td><input type="text" class="tbox" name="telephone" placeholder="eg. 0112583698"></td>
+              </tr>
+              <tr>
+                <td>E-mail:</td>
+                <td><input type="text" class="tbox" name="email"></td>
+              </tr>
+            </table>
+            <br />
+            <table width="100%">
+              <th> Child's Information</th>
+              <tr>
+                <td>Name of Child:</td>
+                <td><input type="text" class="tbox" name="cname"></td>
+              </tr>
+              <tr>
+                <td>Date-of-Birth:</td>
+                <td><input type="date" class="tbox" name="cdob"></td>
+              </tr>
+              <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female </td>
+              </tr>
+              <tr>
+                <td><input type="submit"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <br />
         <h1>Enroll</h1>
         <h2>Registration Form</h2>
         <p>To enroll your child with Rainbow Daycare, simply fill out our <a href="documents/reg form.pdf" target="_blank">registration form</a> and email it to <i>RainbowFlowerDCare@gmail.com</i> with the title "Registration". We will then get back to you within the week to schedule a meeting.</p>
