@@ -38,15 +38,15 @@
               <th>Guardian's Information</th>
               <tr>
                 <td>Name of Guardian:</td>
-                <td><input type="text" class="tbox" name="gname" placeholder="John Doe"></td>
+                <td><input type="text" class="tbox" name="gname" placeholder="John Doe" required>*</td>
               </tr>
               <tr>
                 <td>Telephone Number:</td>
-                <td><input type="text" class="tbox" name="telephone" placeholder="eg. 0112583698"></td>
+                <td><input type="text" class="tbox" name="telephone" placeholder="eg. 0112583698" required>*</td>
               </tr>
               <tr>
                 <td>E-mail:</td>
-                <td><input type="text" class="tbox" name="email" placeholder="demo@demomail.com"></td>
+                <td><input type="email" class="tbox" name="email" placeholder="demo@demomail.com" required>*</td>
               </tr>
             </table>
             <br />
@@ -54,15 +54,15 @@
               <th>Child's Information</th>
               <tr>
                 <td>Name of Child:</td>
-                <td><input type="text" class="tbox" name="cname" placeholder="Baby Jane Doe"></td>
+                <td><input type="text" class="tbox" name="cname" placeholder="Baby Jane Doe" required>*</td>
               </tr>
               <tr>
                 <td>Date of Birth:</td>
-                <td><input type="date" class="tbox" name="cdob"></td>
+                <td><input type="date" class="tbox" name="cdob" required>*</td>
               </tr>
               <tr>
                 <td>Gender :</td>
-                <td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female </td>
+                <td><input type="radio" name="gender" id="male" value="male" required><label for="male">Male</label> <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label></td>
               </tr>
               <tr>
                 <td><button type="submit" class="btn">Submit</button></td>
@@ -70,12 +70,6 @@
             </table>
           </form>
         </div>
-        <!--
-        <br />
-        <h1>Enroll</h1>
-        <h2>Registration Form</h2>
-        <p>To enroll your child with Rainbow Daycare, simply fill out our <a href="documents/reg form.pdf" target="_blank">registration form</a> and email it to <i>RainbowFlowerDCare@gmail.com</i> with the title "Registration". We will then get back to you within the week to schedule a meeting.</p>
-      -->
         <br />
         <br />
         <center>
