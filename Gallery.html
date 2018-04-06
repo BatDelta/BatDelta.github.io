@@ -76,9 +76,9 @@
     <div id="footer-middle">
       <h3>Stay Informed</h3>
       <p>Enter your email to be the first to know when anything happens!</p>
-      <form class="email">
-        <input type="text" name="email-box" placeholder="example@email.com">
-        <button class="btn">Sign-Up ></button>
+      <form class="email" method="post" action="mail-list.php">
+        <input type="email" name="email-box" placeholder="example@email.com" required>
+        <input type="submit" class="btn" value="Sign-Up">
       </form>
     </div>
     <div id="footer-right">

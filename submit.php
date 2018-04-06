@@ -14,12 +14,14 @@ $gender = mysqli_real_escape_string($conn, $_REQUEST['gender']);
 $sql = "INSERT INTO enrollment (Id, gname, telephone, email, cname, cdob, gender) VALUES (NULL ,'$gname', '$telephone', '$email','$cname','$cdob','$gender')";
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
+    echo "<br />";
     echo "You will be redirected to the Enrollment Page in 5 seconds.";
-    header('refresh: 5; url=enroll.html');
+    header('refresh: 5; url=index.html');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+    echo "<br />";
     echo "You will be redirected to the Enrollment Page in 5 seconds.";
-    header('refresh: 5; url=enrol.html');
+    header('refresh: 5; url=index.html');
 }
 // close connection
 mysqli_close($conn);

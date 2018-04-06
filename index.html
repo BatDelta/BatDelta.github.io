@@ -31,7 +31,7 @@
     </div>
     <div id="robotron-side">
       <p>Rainbow Flower Daycare Centre takes care of your child while you are busy, making sure that they receive the maximum care and comfort while working to improve their education and skills, all while your child has fun.</p>
-      <p>Welcoming your child into the arms of our caretakers, nuturing them with the utmost safety and care, and ensuring that we provide only what's best for your child while you are away</p>
+      <!--<p>Welcoming your child into the arms of our caretakers, nuturing them with the utmost safety and care, and ensuring that we provide only what's best for your child while you are away</p>-->
       <button class="btn"><a href="Enroll.html" style="text-decoration: none;">Enroll Now!</a></button>
     </div>
   </div>
@@ -94,9 +94,9 @@
     <div id="footer-middle">
       <h3>Stay Informed</h3>
       <p>Enter your email to be the first to know when anything happens!</p>
-      <form class="email">
-        <input type="text" name="email-box" placeholder="example@email.com">
-        <button class="btn">Sign-Up ></button>
+      <form class="email" method="post" action="mail-list.php">
+        <input type="email" name="email-box" placeholder="example@email.com" required>
+        <input type="submit" class="btn" value="Sign-Up">
       </form>
     </div>
     <div id="footer-right">
